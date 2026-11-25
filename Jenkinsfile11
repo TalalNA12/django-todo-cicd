@@ -4,7 +4,7 @@ pipeline {
   stages {
       stage('Build') {
       agent {
-        docker { image 'python:3.12-slim' }
+        docker { image 'bitnami/django:latest' }
       }
       steps {
             // Run the Django server in the foreground
